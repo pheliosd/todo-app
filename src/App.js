@@ -6,32 +6,52 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-            Hello World
+            Pheliosd's Workspace
             {/*syntax is called as JSX*/}
-            <Abc></Abc>
+            <FirstComponent></FirstComponent>
+            <ThirdComponent/>
         </div>
     );
   }
 }
 //Class Component
-class Abc extends Component {
+class FirstComponent extends Component {
     render() {
         return (
             <div className="abc1">
-                abc class
-                <BBA/>
+               First Component
+                <SecondComponent/>
             </div>
         );
     }
 }
-class BBA extends Component{
+class SecondComponent extends Component{
     render() {
         return (
             <div className="test-2">
-                Sample class 2
+                Second Component
             </div>
         )
     }
 }
+
+function  ThirdComponent(){
+    return (
+        <div className="c3">
+            Third Component
+        </div>
+    );
+}
+
+//
+// class ThirdComponent extends Component{
+//     render() {
+//         return (
+//             <div className="test-2">
+//                 Third Component
+//             </div>
+//         )
+//     }
+// }
 
 export default App;
