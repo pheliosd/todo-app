@@ -7,6 +7,7 @@ class App extends Component {
     return (
         <div className="App">
             Hello World
+            {/*syntax is called as JSX*/}
             <Abc></Abc>
         </div>
     );
@@ -18,8 +19,18 @@ class Abc extends Component {
         return (
             <div className="abc1">
                 abc class
+                <BBA/>
             </div>
         );
+    }
+}
+class BBA extends Component{
+    render() {
+        return (
+            <div className="test-2">
+                Sample class 2
+            </div>
+        )
     }
 }
 
