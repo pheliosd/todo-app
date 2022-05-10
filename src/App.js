@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import FirstComponent from  './components/learning-examples/FirstComponent'
+import  SecondComponent from './components/learning-examples/SecondComponent'
 import './App.css';
 
 
@@ -16,15 +17,6 @@ class App extends Component {
         </div>
     );
   }
-}
-class SecondComponent extends Component{
-    render() {
-        return (
-            <div className="test-2">
-                Second Component
-            </div>
-        )
-    }
 }
 
 //Function Component -> it is an easier way to declare than class component
