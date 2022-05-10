@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import FirstComponent from  './components/learning-examples/FirstComponent'
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -9,21 +11,11 @@ class App extends Component {
             Pheliosd's Workspace
             {/*syntax is called as JSX*/}
             <FirstComponent></FirstComponent>
+            <SecondComponent/>
             <ThirdComponent/>
         </div>
     );
   }
-}
-//Class Component
-class FirstComponent extends Component {
-    render() {
-        return (
-            <div className="abc1">
-               First Component
-                <SecondComponent/>
-            </div>
-        );
-    }
 }
 class SecondComponent extends Component{
     render() {
@@ -35,6 +27,7 @@ class SecondComponent extends Component{
     }
 }
 
+//Function Component -> it is an easier way to declare than class component
 function  ThirdComponent(){
     return (
         <div className="c3">
