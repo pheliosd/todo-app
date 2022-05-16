@@ -11,13 +11,21 @@ class App extends Component {
     return (
         <div className="App">
             Pheliosd's Workspace
-            {/*syntax is called as JSX*/}
-            <FirstComponent></FirstComponent>
-            <SecondComponent/>
-            <ThirdComponent/>
+            <LearningComponent/>
         </div>
     );
   }
+}
+
+class LearningComponent extends Component{
+    render() {
+        return (
+            <div className="App">
+                Pheliosd's Workspace
+
+            </div>
+        );
+    }
 }
 
 //Function Component -> it is an easier way to declare than class component
